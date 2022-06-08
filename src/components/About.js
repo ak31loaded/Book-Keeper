@@ -15,7 +15,7 @@ const About = () => {
       <li>Node Js</li>
     </ul>
     </div>
-    <div>For Any Query Drop a Mail to <a href='www.gmail.com' class="mail">ArpitKumar1717@gmail.com</a></div>
+    <div>For Any Query Drop it Mail at <a href = "mailto: arpitkumar1717@gmail.com" class="mail">ArpitKumar1717@gmail.com</a></div>
     </div>
     <br/>
     </div>

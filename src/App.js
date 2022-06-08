@@ -19,7 +19,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Books />} exact/>
         <Route path='/about' element={<About />} exact />
-        <Route path='/books' element={<Books />} exact/>
         <Route path='/favourite' element={<Favourite />} exact/>
         <Route path='/add' element={<Addbook />} exact/>
         <Route path='/books/:id' element={<UpdateBook />} exact/>

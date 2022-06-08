@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import Bookfav from './Book'
+import Book from './Book'
 const URL="https://shielded-springs-07902.herokuapp.com/books"
 
 
@@ -17,7 +17,7 @@ const Books = () => {
   return (
     <ul class="cards">
        {books && books.map((book,i)=>(
-         <Bookfav book={book}/>
+         <Book book={book}/>
        ))}
     </ul>
   )

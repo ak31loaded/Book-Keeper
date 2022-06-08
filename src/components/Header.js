@@ -12,7 +12,7 @@ const Header = () => {
         <Typography>Book Keeper</Typography>
         <Tabs sx={{ml:"auto"}} textColor='inherit' indicatorColor='primary' value={Value} onChange={(e,val)=>setValue(val)}>
 
-            <Tab LinkComponent={NavLink} to='/books' label="All Books"/>
+            <Tab LinkComponent={NavLink} to='/' label="All Books"/>
             <Tab LinkComponent={NavLink} to='/favourite' label="Favourites"/>
             <Tab LinkComponent={NavLink} to='/add' label="Add Books"/>
             <Tab LinkComponent={NavLink} to='/about' label="About Us"/>

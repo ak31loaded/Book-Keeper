@@ -26,7 +26,7 @@ const Book = (props) => {
     const deleteHandler=async()=>{
       await axios.delete(URL)
       .then((res)=>res.data)
-      .then(()=>history("/books"))
+      .then(()=>history("/"))
     }
     const sendRequest=async()=>
     {
@@ -37,7 +37,7 @@ const Book = (props) => {
         image:String(image),
         favourite:Number(1-favourite)
       })
-      .then(()=>history("/books"))
+      .then(()=>history("/"))
     }
     const favouriteHandler=()=>{
 
