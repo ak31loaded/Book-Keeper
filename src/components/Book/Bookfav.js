@@ -1,9 +1,7 @@
-import { Button, IconButton, Tab, Tabs } from '@mui/material';
+import {IconButton} from '@mui/material';
 import axios from 'axios';
-import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom';
-import { useHistory } from "react-router-dom";
-import DeleteIcon from '@mui/icons-material/Delete';
+import React  from 'react'
+import { Link } from 'react-router-dom';
 import {useNavigate} from "react-router-dom"
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ReplayOutlinedIcon from '@mui/icons-material/ReplayOutlined';
@@ -19,17 +17,12 @@ const theme = createTheme({
 const Book = (props) => {
     
     const {_id,name,description,image,author,favourite}=props.book;
-    const idLink="/books/"+_id;
+    
     const URL="https://shielded-springs-07902.herokuapp.com/books/"+_id;
     const updte="/books/"+_id;
-    const changecolor=favourite?"primary":"secondary";
+    
     const history=useNavigate();
-    console.log(URL);
-    const deleteHandler=async()=>{
-      await axios.delete(URL)
-      .then((res)=>res.data)
-      .then(()=>history("/favourite"))
-    }
+    
     const sendRequest=async()=>
     {
       await axios.put(URL,{

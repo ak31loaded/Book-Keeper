@@ -1,5 +1,5 @@
 
-import { Alert, Collapse, IconButton } from '@mui/material';
+import { Alert, IconButton } from '@mui/material';
 import axios from 'axios'
 import React, { useState } from 'react'
 
@@ -33,12 +33,12 @@ const Addbook = () => {
       [e.target.name]:e.target.value
     }))
   }
-  let valid=true;
+  
   const handleSubmit=(e)=>{
     e.preventDefault();
     console.log(inputs);
     sendRequest();
-    if(inputs.name!=""&&inputs.description!=""&&inputs.author!=""&&inputs.image!="")
+    if(inputs.name!==""&&inputs.description!==""&&inputs.author!==""&&inputs.image!=="")
     {
       setMessage("Book Added Successfully")
       setmessageicon("success");
