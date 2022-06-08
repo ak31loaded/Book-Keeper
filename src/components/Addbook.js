@@ -77,7 +77,7 @@ const Addbook = () => {
       <input type="text" name="image" required="" value={inputs.image} onChange={handleChange} autoComplete="off"/>
       <label>Image URL</label>
     </div>
-    <a href="#" onClick={handleSubmit}>
+    <a onClick={handleSubmit}>
       <span></span>
       <span></span>
       <span></span>

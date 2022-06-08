@@ -50,7 +50,7 @@ const Book = (props) => {
     
     
     <li>
-      <a href="" class="card">
+      <a class="card">
         <img src={image} class="card__image" alt="" />
         <div class="card__overlay">
           <div class="card__header">
